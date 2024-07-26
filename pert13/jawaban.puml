@@ -1,0 +1,18 @@
+@startuml jawaban
+
+start
+
+:User memasukkan username dan password;
+:User klik tombol Login;
+
+if (Username dan password benar?) then (yes)
+  :Tampilkan pesan "Login berhasil";
+  :Akses ke aplikasi diberikan;
+else (no)
+  :Tampilkan pesan "Username atau password salah";
+  :Kembali ke halaman login;
+endif
+
+stop
+
+@enduml
