@@ -10,7 +10,6 @@ int main(){
     cout << a[2];
     cout << a[3];
     cout << a[4];
-
     return 0;
 
 }
