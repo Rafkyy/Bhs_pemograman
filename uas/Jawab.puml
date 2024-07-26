@@ -1,0 +1,14 @@
+@startuml
+
+class User {
+    - username: String
+    - email: String
+    - phone_number: String
+    - activity_log: List<String>
+    + __init__(username: String, email: String, phone_number: String)
+    + update_email(new_email: String): void
+    + log_activity(activity: String): void
+    + display_info(): void
+}
+
+@enduml
