@@ -35,5 +35,6 @@ user1.update_email("john.doe@newdomain.com")
 user1.log_activity("Logged in")
 user1.log_activity("Updated profile")
 
+
 # Tampilkan informasi pengguna setelah pembaruan
 user1.display_info()
