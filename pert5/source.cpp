@@ -1,36 +1,54 @@
-def perkalian(x , y):
-    return x * y
+#include <iostream>
+#include <string>
+using namespace std;
 
-def pengurangan(x , y):
-    return x - y
+class Nama {
+    public :
+        string fName, mName, lName;
+        void full(string fName, string mName, string lName)
+        {
+            cout << "FULL NAME : " << fName + " " << mName << " " << lName << endl;
+        }
+};
 
-def penambahan(x , y):
-    return x + y
+int main() {
+    Nama n;
+    int pilih;
+    char pil;
+menu: 
+    cout << "MENU" << endl;
+    cout << "1. Input" << endl;
+    cout << "2. Exit" <<endl;
+    cout << "pilihan : " ;
+    cin >> pilih;
 
-def pembagian(x , y):
-    return x / y
+    switch(pilih){
+        case 1:
+            cout << "Masukkan Nama Depan : " ;
+            cin >> n.fName;
+            cout << "Masukkan Nama Tengah : " ;
+            cin >> n.mName;
+            cout << "Masukkan Nama Akhir : " ;
+            cin >> n.lName;
+            n.full(n.fName, n.mName, n.lName);
+            break;
+        case 2:
+            goto keluar;
+            break;
 
-def main():
-    print("Silakan pilih operasi:")
-    print("1. Perkalian")
-    print("2. Pengurangan")
-    print("3. Penambahan")
-    print("4. Pembagian")
+        default:
+            cout << "Pilihan Salah" << endl;
+            break;
+        }
+    
+        cout << "Ingin Mengulangi ? (Y/N) : " ;
+        cin >> pil;
+        if ((pil == 'Y' || pil == 'y'))
+            {goto menu;}
+        else if (pil == 'N' || pil == 'n')
+            {goto keluar;}
 
-    pilihan = input("pilihan (1/2/3/4): ")
-
-    num1 = float(input("Masukkan bilangan pertama: "))
-    num2 = float(input("Masukkan bilangan kedua: "))
-
-    if pilihan == '1':
-        print("Hasil perkalian:", perkalian(num1, num2))
-    elif pilihan == '2':
-        print("Hasil pengurangan:", pengurangan(num1, num2))
-    elif pilihan == '3':
-        print("Hasil penambahan:", penambahan(num1, num2))
-    elif pilihan == '4':
-        print("Hasil pembagian:", pembagian(num1, num2))
-    else:
-        print("Pilihan tidak valid")
-if __name__ == "__main__":
-    main()
+        keluar:
+            cout << "\n TERIMA KASIH" << endl;
+        return 0;
+}

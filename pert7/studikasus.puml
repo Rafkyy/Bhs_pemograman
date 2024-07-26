@@ -1,0 +1,25 @@
+@startuml studikasus
+
+start
+:Menu :
+1.Tambah
+1.Kurang
+3.kali
+4.Bagi;
+switch (Pilihan)
+case ( Pilih = 1 )
+  :Masukan 2 angka;
+  :Hasil Pertambahan;
+case ( Pilih = 2 ) 
+  :Masukan 2 angka;
+  :Hasil Penguragan;
+case ( Pilih = 3 )
+  :Masukan 2 angka;
+  :Hasil Perkalian;
+case ( Pilih = 4 )
+  :Masukan 2 angka;
+  :Hasil Pembagian;
+endswitch
+
+stop
+@enduml
