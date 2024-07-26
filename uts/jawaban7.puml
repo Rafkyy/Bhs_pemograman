@@ -1,0 +1,32 @@
+@startuml jawaban7
+
+start
+:Menu :
+1.Tambah
+1.Kurang
+3.kali
+4.Bagi;
+
+:Masukan Menu yang ingin dipilih;
+
+switch (Pilihan)
+    case ( Pilih = 1 )
+        :Masukan angka pertama;
+        :Masukan angka kedua;
+        :Hasil Pertambahan;
+    case ( Pilih = 2 ) 
+        :Masukan angka pertama;
+        :Masukan angka kedua;
+        :Hasil Penguragan;
+    case ( Pilih = 3 )
+        :Masukan angka pertama;
+        :Masukan angka kedua;
+        :Hasil Perkalian;
+    case ( Pilih = 4 )
+        :Masukan angka pertama;
+        :Masukan angka kedua;
+        :Hasil Pembagian;
+endswitch
+
+stop
+@enduml
