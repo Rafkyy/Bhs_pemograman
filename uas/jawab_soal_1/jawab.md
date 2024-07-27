@@ -1,0 +1,2 @@
+1. Fungsi (Function)
+Fungsi adalah blok kode yang dirancang untuk melakukan tugas tertentu. Fungsi memudahkan pengelolaan kode dengan membagi tugas besar menjadi tugas-tugas kecil yang dapat digunakan kembali. Fungsi didefinisikan menggunakan kata kunci def diikuti dengan nama fungsi dan tanda kurung ().
